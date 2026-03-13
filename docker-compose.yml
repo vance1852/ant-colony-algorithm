@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  # 运行主程序
+  aco-algorithm:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: aco-algorithm
+    restart: "no"
+    command: python main.py
+
+  # 运行测试
+  aco-test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: aco-test
+    restart: "no"
+    command: python run_tests.py
+    profiles:
+      - test

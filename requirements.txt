@@ -1,0 +1,7 @@
+# 蚁群算法 - 依赖清单
+# Ant Colony Optimization - Requirements
+#
+# 本项目仅使用 Python 标准库，无需额外依赖
+# This project uses only Python standard library, no external dependencies required
+#
+# Python >= 3.8
